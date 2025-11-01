@@ -49,7 +49,7 @@ To use the Streamlit application:
 1. **Run the Streamlit app:**
 
     ```bash
-    streamlit run app.py
+    streamlit run streamlit/app.py
     ```
 
 2. **Open your web browser** and go to `http://localhost:8501` to interact with the application.

@@ -2,11 +2,13 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from PIL import Image
+import os
 
 # Custom function to load the pre-trained model
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model("streamlit/ai_imageclassifier.h5")
+    model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "ai_imageclassifier.h5")
+    model = tf.keras.models.load_model(model_path)
     return model
 
 # Function to resize and predict

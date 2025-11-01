@@ -1,0 +1,17 @@
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
